@@ -118,6 +118,12 @@
     height: 1.25rem;
   }
 
+ /* ERROR MESSAGE */
+  .dsf_error-message {
+    margin-top: 24px;
+    color: #fff;
+  }
+
   /* THANKS MESSAGE */
   .dsf__thanks-message {
     color: #ffffff;
