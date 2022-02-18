@@ -1,10 +1,12 @@
- .dsf {
+ /* FORM */
+  .dsf {
     width: 100%;
-    background-color: #ed2d23;
+    /* background-color: #ed2d23; */
   }
 
   .dsf__group {
-    @apply flex flex-col;
+    display: flex;
+    flex-direction: column;
   }
   .dsf__group label {
     display: none;
@@ -12,95 +14,128 @@
   .dsf__group input,
   .dsf__group select {
     height: 44px;
-    @apply border-2 border-solid border-white bg-white text-gray-600 p-2 rounded;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    color: #4b5563;
+    border-radius: 0.25rem;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-style: solid;
   }
   .dsf__group select option {
-    @apply bg-white;
+    background-color: #ffffff;
   }
   .dsf__group input::placeholder {
-    @apply text-gray-400;
+    color: #9ca3af;
   }
   .dsf__group--error input::placeholder {
-    @apply text-red-600;
+    color: #dc2626;
   }
   .dsf__group--error input,
   .dsf__group--error select {
-    @apply bg-red-300 text-red-600;
+    background-color: #fca5a5;
+    color: #dc2626;
   }
 
   /* BUTTON */
   .dsf__buttons-container {
-    @apply flex w-full gap-4 mt-10;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
   }
   .dsf__button-next {
-    @apply text-white text-2xl border-4 border-solid border-white py-3 w-48 mx-auto rounded-xl  cursor-pointer uppercase;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    width: 12rem;
+    border-radius: 0.75rem;
+    border-width: 4px;
+    border-color: #ffffff;
+    border-style: solid;
+    cursor: pointer;
   }
   .dsf__button-next:hover {
-    @apply bg-red-700;
+    background-color: #b91c1c;
   }
   .dsf__button-next:focus {
-    @apply outline-none;
+    outline: 0;
   }
   .dsf__button-prev {
-    @apply hidden;
+    display: none;
   }
 
   /* PAYMENT */
   .dsf__payment {
-    @apply grid grid-cols-6 gap-4 mx-auto items-end;
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1rem;
   }
   .payment-method-cc-number {
-    @apply col-span-6;
+    grid-column: span 6 / span 6;
   }
   .payment-method-cc-method-name {
-    @apply hidden;
+    display: none;
   }
   .payment-method-cc-verification-number {
-    @apply col-span-3;
+    grid-column: span 3 / span 3;
   }
   .payment-method-cc-expiration {
-    @apply col-span-3;
+    grid-column: span 3 / span 3;
   }
   .payment-method-cardholder-id-type {
-    @apply col-span-2;
+    grid-column: span 2 / span 2;
   }
   .payment-method-cardholder-id-number {
-    @apply col-span-4;
+    grid-column: span 4 / span 4;
   }
   .payment-method-cardholder-name {
-    @apply col-span-6;
+    grid-column: span 6 / span 6;
   }
 
   /* SECURITY MESSAGE */
   .dsf_security-message {
-    @apply text-white flex mt-4;
+    display: flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    display: flex;
   }
   .dsf_security-message p {
-    @apply text-xs w-full flex-auto pl-2;
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    flex: 1 1 auto;
+    width: 100%;
   }
   .dsf_security-message svg {
-    @apply h-5;
+    height: 1.25rem;
   }
 
   /* THANKS MESSAGE */
   .dsf__thanks-message {
-    @apply text-white;
+    color: #ffffff;
   }
 
   @media screen and (max-width: 300px) {
     .payment-method-cc-verification-number {
-      @apply col-span-6;
+      grid-column: span 6 / span 6;
     }
     .payment-method-cc-expiration {
-      @apply col-span-6;
+      grid-column: span 6 / span 6;
     }
     .payment-method-cardholder-id-type {
-      @apply col-span-6;
+      grid-column: span 6 / span 6;
     }
     .payment-method-cardholder-id-number {
-      @apply col-span-6;
+      grid-column: span 6 / span 6;
     }
     .payment-method-cardholder-name {
-      @apply col-span-6;
+      grid-column: span 6 / span 6;
     }
   }
