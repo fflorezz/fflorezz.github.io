@@ -101,25 +101,25 @@
   }
 
   /* SECURITY MESSAGE */
-  .dsf_security-message {
+  .dsf__security-message {
     display: flex;
     margin-top: 1rem;
     color: #ffffff;
     display: flex;
   }
-  .dsf_security-message p {
+  .dsf__security-message p {
     padding-left: 0.5rem;
     font-size: 0.75rem;
     line-height: 1rem;
     flex: 1 1 auto;
     width: 100%;
   }
-  .dsf_security-message svg {
+  .dsf__security-message svg {
     height: 1.25rem;
   }
 
  /* ERROR MESSAGE */
-  .dsf_error-message {
+  .dsf__error-message {
     margin-top: 24px;
     color: #fff;
   }
