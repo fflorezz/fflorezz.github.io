@@ -1,0 +1,347 @@
+ /* FORM */
+
+  .dsf {
+    /* Contendor del formulario */
+    width: 100%;
+  }
+
+  /* STEPS */
+
+  .dsf__step-1-container {
+    /* Contenedor del paso 1 */
+  }
+  .dsf__step-2-container {
+    /* Contenedor del paso 2 */
+  }
+  .dsf__step-3-container {
+    /* Contenedor del paso 3 */
+  }
+
+  /* AMOUNTS */
+
+  .dsf__amount-option-list {
+    /* Contenedor de la sección de 'montos' */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .dsf__amount-option {
+    /* Estilos por defecto de cada opción */
+    padding: 0.5rem;
+    color: #222222;
+    text-align: center;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-color: #d1d5db;
+    border-style: solid;
+    cursor: pointer;
+    grid-column: span 1 / span 1;
+    background-color: #ffffff;
+    font-weight: 700;
+  }
+  .dsf__amount-option--active {
+    /* Estilo de la opción 'otro monto' cuando se encuentra en modo edición */
+    padding: 0.5rem;
+    color: #222222;
+    text-align: center;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-color: #d1d5db;
+    border-style: solid;
+    cursor: pointer;
+    grid-column: span 1 / span 1;
+    background-color: #ffffff;
+    font-weight: 700;
+  }
+  .dsf__amount-option--selected {
+    /* Estilos de la opción seleccionada*/
+    background-color: #eeee22;
+    border-color: #eeee22;
+    color: #222222;
+  }
+  .dsf__amount-option:hover {
+    background-color: #eeee22;
+    border-color: #eeee22;
+    color: #222222;
+  }
+  .dsf__amount-option-input {
+    /* Input de la opción 'otro monto' cuando se encuentra en modo edición */
+    text-align: center;
+    width: 100%;
+  }
+  .dsf__amount-option-label {
+    /* Detalle del monto */
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  /* RECURRENCY */
+
+  .dsf__recurrency {
+    /* Contenedor de la sección 'recurrencia' */
+  }
+  .dsf__recurrency-option-list {
+    /* Contenedor de las opciones de recurrencia */
+    display: flex;
+    margin-top: 1rem;
+  }
+  .dsf__recurrency-option {
+    /* Contenedor del label y el radio button */
+    display: flex;
+    margin-bottom: 1.5rem;
+    margin-right: 4rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .dsf__recurrency-option-label {
+    /* label de la opción */
+    color: #ffffff;
+  }
+  .dsf__recurrency-option--selected .dsf__recurrency-option-label {
+    /* Estilos del label cuando la opción se encuentra seleccionada */
+    color: #eeee22;
+    font-weight: 700;
+  }
+  .dsf__recurrency-option-radio {
+    /* estilos del radio button */
+    display: flex;
+    margin: 0;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: #d1d5db;
+    border-style: solid;
+    cursor: pointer;
+  }
+  .dsf__recurrency-option--selected .dsf__recurrency-option-radio {
+    /* Estilos del radio button cuando la opción se encuentra seleccionada */
+    border-color: #eeee22;
+  }
+  .dsf__recurrency-option-radio-inner {
+    /* estilos del círculo interno del radio button */
+    display: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+  }
+  .dsf__recurrency-option--selected .dsf__recurrency-option-radio-inner {
+    /* estilos del círculo interno del radio button cuando la opción se encuentra seleccionada */
+    display: block;
+    background-color: #eeee22;
+  }
+
+  /* ALLOW UPGRADE */
+
+  .dsf__allow-upgrade {
+    /* Contenedor de la sección 'aumento de la donación' */
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .dsf__allow-upgrade-checkbox {
+    /* Estilos del 'checkbox' */
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 0.125rem;
+    border-width: 1px;
+    border-color: #d1d5db;
+    border-style: solid;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .dsf__allow-upgrade-label {
+    /* Estilos del label */
+    margin-left: 0.5rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .dsf__allow-upgrade-checkbox--checked {
+    /* Estilos del 'checkbox' checked */
+    background-color: #eeee22;
+    color: #222222;
+    border-color: #eeee22;
+    padding: 1px;
+  }
+
+  /* BUTTONS */
+
+  .dsf__buttons-container {
+    /* Contenedor de los botones */
+    margin-top: 1.5rem;
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  .dsf__button-next {
+    /* Estilos del botón 'siguiente' */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #eeee17;
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 30%;
+    border-radius: 9999px;
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .dsf__button-next:hover {
+    background-color: #fafa4c;
+  }
+  .dsf__button-next:focus {
+    outline: 0;
+  }
+  .dsf__button-prev {
+    /* Estilos del botón 'volver' */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 30%;
+    border-radius: 9999px;
+    border-width: 1px;
+    border-color: #d2d6dc;
+    border-style: solid;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .dsf__button-prev:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  .dsf__button-prev:focus {
+    outline: 0;
+  }
+
+  /* DONOR */
+  .dsf__donor {
+    /* Contenedor de la sección 'datos del donante' */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  /* DSF GROUP */
+  .dsf__group {
+    /* Contenedor de cada grupo compuesto por label + input o label + select */
+    display: flex;
+    flex-direction: column;
+  }
+  .dsf__group label {
+    /* Estilos del label */
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .dsf__group input,
+  .dsf__group select {
+    /* Estilos para input y select */
+    padding: 0.5rem;
+    background-color: #ffffff;
+    color: #222;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-color: #d1d5db;
+    border-style: solid;
+  }
+  .dsf__group select option {
+    /* Estilo de las opciones en el select */
+    color: #222;
+    background-color: transparent;
+  }
+  .dsf__group input::placeholder {
+    color: #bababb;
+  }
+  .dsf__group--error input::placeholder {
+    /* Estilos del placeholder cuando un input presenta errores */
+    color: #dc2626;
+  }
+  .dsf__group--active input,
+  .dsf__group--active select {
+    /* Estilos de input y select cuando se encuentran activos */
+  }
+  .dsf__group--error input,
+  .dsf__group--error select {
+    /* Estilos de input y select al presentar errores */
+    color: #dc2626;
+    border-color: #dc2626;
+    background-color: #fee2e2;
+  }
+
+  /* PAYMENT */
+  .dsf__payment {
+    /* Contenedor de la sección 'método de pago' */
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .payment-method-cc-number {
+    grid-column: span 4 / span 4;
+  }
+  .payment-method-cc-method-name {
+    grid-column: span 2 / span 2;
+  }
+  .payment-method-cc-verification-number {
+    grid-column: span 3 / span 3;
+  }
+  .payment-method-cc-expiration {
+    grid-column: span 3 / span 3;
+  }
+  .payment-method-cardholder-id-type {
+    grid-column: span 2 / span 2;
+  }
+  .payment-method-cardholder-id-number {
+    grid-column: span 4 / span 4;
+  }
+  .payment-method-cardholder-name {
+    grid-column: span 6 / span 6;
+  }
+
+  /* SECURITY MESSAGE */
+
+  .dsf__security-message {
+    /* Contenedor del mensaje SSL/TLS1.2 */
+    display: flex;
+    margin-top: 1rem;
+    color: #ffffff;
+  }
+  .dsf__security-message p {
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    flex: 1 1 auto;
+    width: 100%;
+  }
+  .dsf__security-message svg {
+    height: 1.25rem;
+  }
+
+  /* THANKS MESSAGE */
+  .dsf__thanks-message {
+    /* Contenedor del mensaje de agradecimiento */
+    color: #ffffff;
+  }
+
+  /* WIDGETS */
+  .dsf__widgets {
+    /* Contenedor de los campos predefinidos y personalizados*/
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
